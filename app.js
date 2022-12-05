@@ -5,16 +5,10 @@ burger.addEventListener("click", () => {
   menu.classList.toggle("open");
 });
 
-// Pour l'animation lorsqu'on voit les compétences
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    // If the element is visible
-    if (entry.isIntersecting) {
-      // Add the animation class
-      entry.target.classList.add("mp4-animation");
-    }
-  });
-});
+gsap.registerPlugin(ScrollTrigger);
 
-// Tell the observer which elements to track
-observer.observe(document.querySelector("#mp4"));
+gsap.to(".progressbar-wrapper", {
+  scrollTrigger: ".progressbar-wrapper",
+  x: "100%",
+  duration: 2,
+});
