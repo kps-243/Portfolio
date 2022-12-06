@@ -7,8 +7,14 @@ burger.addEventListener("click", () => {
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".progressbar-wrapper", {
-  scrollTrigger: ".progressbar-wrapper",
-  x: "100%",
+// gsap.from("")
+
+gsap.from(".progressbar", {
+  scrollTrigger: {
+    trigger: "#skill",
+    start: "top center",
+  },
+  ease: "power2.out",
+  width: "0",
   duration: 2,
 });

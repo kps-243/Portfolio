@@ -68,7 +68,7 @@ button{
     display: block;
     margin: auto;
     position: relative;
-    top: 50px;
+    top: 200px;
     padding: 20px;
     font-size: 25px;
     background-color: rgb(5, 176, 255);
@@ -87,9 +87,11 @@ button:hover{
 
 .container {
     max-width: 1600px;
+    margin-top: 200px;
     padding: 50px;
 }
 div.container p {
+    
     text-transform: uppercase;
     color: #fff;
     font-weight: 900;
@@ -265,8 +267,12 @@ li>a:hover{
     font-size: 1.8rem;
 }
 /* A propos de moi */
+h1#moi{
+    margin-top: 50vh;
+}
+
 #flex{
-    margin-top: 20%;
+    margin-top: 10vh;
 }
 
 /* Mes Projets */
@@ -352,20 +358,20 @@ h3.skill{
   .progressbar[title="downloaded"] {
      background-color: var(--success);
   }
-    
   #mp4 {
     width: 70%;
   }
   #mp5{
     width: 65%;
+ 
   }
   #mp3 {
     width: 50%;
   }
   #mp2{
     width: 55%;
-  }
-
+   }
+ 
 
 
 /* Pour La version desktop */
@@ -416,6 +422,12 @@ h3.skill{
 
     section#flex{
         margin-top: 200px;
+        display: flex;
+    }
+    h1#moi{
+        position: relative;
+        top: 200px;
+
     }
 
     /* Partie projet */
@@ -447,3 +459,4 @@ h3.skill{
         padding: 0;
     }
 }
+
